@@ -1,0 +1,278 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesh Goswami | Badminton Player</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Certificate Section Styling */
+        h2 {
+            text-align: center;
+            margin: 2rem 0;
+            color: #333;
+            font-size: 2rem;
+            border-bottom: 3px solid #0073e6;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 2rem;
+            padding: 0;
+        }
+
+        .certificates img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .certificates img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Download button for each image */
+        .download-btn {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #005bb5;
+        }
+
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Download button inside modal */
+        .modal-download-btn {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .modal-download-btn:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #0073e6;
+            color: white;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#">Aesh Goswami</a>
+    </nav>
+
+    <!-- Badminton Certificates Section -->
+    <section>
+        <h2>My Badminton Certificates</h2>
+        <div class="certificates">
+            <!-- 15 Placeholder images for certificates -->
+            <div>
+                <img src="images/certificate1.jpg" alt="Certificate 1" onclick="openModal(this)">
+                <a class="download-btn" href="images/certificate1.jpg" download>Download</a>
+            </div>
+            <div>
+                <img src="images/certificate2.jpg" alt="Certificate 2" onclick="openModal(this)">
+                <a class="download-btn" href="images/certificate2.jpg" download>Download</a>
+            </div>
+            <div>
+                <img src="images/certificate3.jpg" alt="Certificate 3" onclick="openModal(this)">
+                <a class="download-btn" href="images/certificate3.jpg" download>Download</a>
+            </div>
+
+            <div>
+            <img src="images/certificate4.jpg" alt="Certificate 4" onclick="openModal(this)">
+            <a class="download-btn" href="images/certificate4.jpg" download>Download</a>  </div>
+        
+        <div>
+            <img src="images/certificate5.jpg" alt="Certificate 5" onclick="openModal(this)">
+            <a class="download-btn" href="images/certificate5.jpg" download>Download</a>
+        </div>
+        <div>
+            <img src="images/certificate6.jpg" alt="Certificate 6" onclick="openModal(this)">
+            <a class="download-btn" href="images/certificate6.jpg" download>Download</a>
+        </div>
+
+        <div>
+        <img src="images/certificate7.jpg" alt="Certificate 7" onclick="openModal(this)">
+        <a class="download-btn" href="images/certificate8.jpg" download>Download</a>  </div>
+    
+    <div>
+        <img src="images/certificate9.jpg" alt="Certificate 9" onclick="openModal(this)">
+        <a class="download-btn" href="images/certificate9.jpg" download>Download</a>
+    </div>
+    <div>
+        <img src="images/certificate10.jpg" alt="Certificate 10" onclick="openModal(this)">
+        <a class="download-btn" href="images/certificate10.jpg" download>Download</a>
+    </div>
+
+
+    <div>
+    <img src="images/certificate8.jpg" alt="Certificate 8" onclick="openModal(this)">
+    <a class="download-btn" href="images/certificate8.jpg" download>Download</a> 
+</div>
+<div>
+    <img src="images/certificate11.jpg" alt="Certificate 11" onclick="openModal(this)">
+    <a class="download-btn" href="images/certificate11.jpg" download>Download</a>
+</div>
+<div>
+    <img src="images/certificate12.jpg" alt="Certificate12" onclick="openModal(this)">
+    <a class="download-btn" href="images/certificate12.jpg" download>Download</a>
+</div>
+
+<div>
+<img src="images/certificate13.jpg" alt="Certificate 13" onclick="openModal(this)">
+    <a class="download-btn" href="images/certificate13.jpg" download>Download</a>
+</div>
+<div>
+    <img src="images/certificate14.jpg" alt="Certificate 14" onclick="openModal(this)">
+    <a class="download-btn" href="images/certificate14.jpg" download>Download</a>
+</div>
+
+</div>
+
+
+
+            <!-- Repeat for all other images -->
+        </div>
+    </section>
+
+    <!-- Modal for displaying full-screen image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="">
+            <a id="modalDownloadBtn" class="modal-download-btn" href="#" download>Download</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Aesh Goswami | All Rights Reserved
+    </footer>
+
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+        function openModal(image) {
+            var modal = document.getElementById("imageModal");
+            var modalImage = document.getElementById("modalImage");
+            var modalDownloadBtn = document.getElementById("modalDownloadBtn");
+
+            // Set the modal image to the clicked image
+            modalImage.src = image.src;
+
+            // Set the download link to the image source
+            modalDownloadBtn.href = image.src;
+
+            // Display the modal
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+
